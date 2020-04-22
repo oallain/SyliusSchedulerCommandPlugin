@@ -59,6 +59,12 @@ jobs:
             - name: Composer - Update dependencies
               run: composer update ${{ matrix.prefer }} --no-progress --no-scripts
 
+            - name: ECS - Run
+              run: vendor/bin/ecs check src/ tests/Behat/ --no-progress-bar -c ruleset/easy-coding-standard.yml
+
+            - name: PHPStan - Run
+              run: vendor/bin/phpstan analyse -c ruleset/phpstan.neon src/
+
             - name: GrumPHP - Run
               run: vendor/bin/grumphp run
 
