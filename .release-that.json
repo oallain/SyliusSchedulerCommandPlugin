@@ -1,7 +1,8 @@
 {
     "commit": {
         "message": "chore: release {version}",
-        "empty": false
+        "empty": false,
+        "stageAll": true
     },
     "push": {
         "remote": "origin",
@@ -10,5 +11,17 @@
     "tag": {
         "name": "v{version}",
         "message": "Release Tag {version}"
+    },
+    "hooks": {
+        "beforeAll": "",
+        "afterAll": "",
+        "beforeRelease": "",
+        "afterRelease": "",
+        "beforeCommit": "",
+        "afterCommit": "",
+        "beforeTag": "",
+        "afterTag": "",
+        "beforePush": "",
+        "afterPush": ""
     }
 }
