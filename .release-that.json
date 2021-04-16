@@ -1,0 +1,14 @@
+{
+    "commit": {
+        "message": "chore: release {version}",
+        "empty": false
+    },
+    "push": {
+        "remote": "origin",
+        "arguments": ""
+    },
+    "tag": {
+        "name": "v{version}",
+        "message": "Release Tag {version}"
+    }
+}
