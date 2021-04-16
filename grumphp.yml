@@ -3,8 +3,6 @@ grumphp:
         failed: ~
         succeeded: ~
     tasks:
-        composer:
-            no_check_all: true
         git_blacklist:
             keywords:
                 - 'var_dump'
